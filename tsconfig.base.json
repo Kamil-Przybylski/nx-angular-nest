@@ -1,5 +1,5 @@
 {
-  "compileOnSave": true,
+  "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-angular-nest/configuration": ["libs/configuration/src/index.ts"],
+      "@nx-angular-nest/nest-auth": ["libs/nest-auth/src/index.ts"],
+      "@nx-angular-nest/nest-database": ["libs/nest-database/src/index.ts"],
+      "@nx-angular-nest/ng-material": ["libs/ng-material/src/index.ts"]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "**/node_modules/*", "tmp"]
 }

@@ -1,0 +1,8 @@
+env: 'development'
+db:
+  host: 'localhost'
+  port: 5432
+  username: ''
+  password: ''
+  database: 'nx-angular-nest'
+  synchronize: true

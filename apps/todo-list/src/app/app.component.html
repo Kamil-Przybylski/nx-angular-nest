@@ -1,2 +1,24 @@
-<nx-angular-nest-nx-welcome></nx-angular-nest-nx-welcome>
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+
+<mat-card>
+  <mat-card-title>Login</mat-card-title>
+  <mat-card-content>
+    <form fxLayout="column" fxLayoutAlign="center none">
+      <mat-form-field>
+        <mat-label>username</mat-label>
+        <input matInput placeholder="username" type="text" #username />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>password</mat-label>
+        <input matInput placeholder="password" type="text" #password />
+      </mat-form-field>
+    </form>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="login({ username: username.value, password: password.value })"
+    >
+      login
+    </button>
+  </mat-card-content>
+</mat-card>
