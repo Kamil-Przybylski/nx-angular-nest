@@ -1,4 +1,4 @@
 env: 'development'
 http:
-  prefix: 'test'
+  prefix: 'api'
   port: 3000

@@ -7,7 +7,7 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgMaterialModule } from '@nx-angular-nest/ng-material';
+import { NgMaterialModule } from '@libs/ng-material';
 import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({

@@ -5,6 +5,7 @@ import { join } from 'path';
 
 export const enum ConfigPath {
   API = 'api',
+  AUTH = 'auth',
   DATABASE = 'database',
 }
 

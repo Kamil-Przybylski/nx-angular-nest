@@ -1,0 +1,4 @@
+env: 'development'
+jwt:
+  secret: 'my-super-secret-2'
+  expiresIn: '1m'

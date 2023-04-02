@@ -27,7 +27,10 @@
       },
       "configurations": {
         "development": {},
-        "production": {}
+        "production": {},
+        "repl": {
+          "main": "apps/api/src/repl.ts"
+        }
       }
     },
     "serve": {
@@ -42,6 +45,9 @@
         },
         "production": {
           "buildTarget": "api:build:production"
+        },
+        "repl": {
+          "buildTarget": "api:build:repl"
         }
       }
     },

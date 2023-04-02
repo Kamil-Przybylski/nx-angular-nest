@@ -4,9 +4,9 @@ import { IConfig } from './config.model';
 export default Joi.object<IConfig>({
   env: Joi.string().default('development'),
   db: Joi.object<IConfig['db']>({
-    type: Joi.string().default('postgres'),
-    host: Joi.string().default('localhost'),
-    port: Joi.number().default(5432),
+    type: Joi.string(),
+    host: Joi.string(),
+    port: Joi.number(),
     username: Joi.string().allow(''),
     password: Joi.string().allow(''),
     database: Joi.string().required(),

@@ -3,11 +3,12 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
-import { NestDatabaseModule } from '@nx-angular-nest/nest-database';
+import { NestDatabaseModule } from '@libs/nest-database';
 import { ConfigModule } from '@nestjs/config';
 import configSchema from './config/config.schema';
-import { ConfigPath, configuration } from '@nx-angular-nest/configuration';
+import { ConfigPath, configuration } from '@libs/configuration';
 import { ConfigurationService } from './config/config.service';
+import { AuthModule } from '@libs/nest-auth';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { ConfigurationService } from './config/config.service';
     }),
 
     NestDatabaseModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService, ConfigurationService],
