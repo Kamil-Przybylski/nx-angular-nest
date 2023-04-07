@@ -1,4 +1,5 @@
 env: 'development'
 http:
+  host: 'localhost'
   prefix: 'api'
   port: 3000

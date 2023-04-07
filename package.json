@@ -5,7 +5,8 @@
   "scripts": {
     "start:fe:dev": "nx run todo-list:serve:development",
     "start:api:dev": "nx run api:serve:development",
-    "start:api:repl": "nx run api:serve:repl"
+    "start:api:repl": "nx run api:serve:repl",
+    "start:api:e2e": "nx run api-e2e:e2e"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/config": "^2.3.1",
     "@nestjs/core": "^9.0.0",
+    "@nestjs/cqrs": "^9.0.3",
     "@nestjs/jwt": "^10.0.3",
     "@nestjs/passport": "^9.0.3",
     "@nestjs/platform-express": "^9.0.0",

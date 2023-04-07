@@ -6,6 +6,7 @@
     "nestjs",
     "ngrx",
     "nrwl",
+    "tailwindcss",
     "timestamptz",
     "typeorm"
   ],
