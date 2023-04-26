@@ -20,7 +20,8 @@
           "apps/todo-list/src/assets"
         ],
         "styles": ["apps/todo-list/src/styles.scss"],
-        "scripts": []
+        "scripts": [],
+        "allowedCommonJsDependencies": ["lodash"]
       },
       "configurations": {
         "production": {

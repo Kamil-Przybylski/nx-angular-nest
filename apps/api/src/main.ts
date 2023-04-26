@@ -22,6 +22,7 @@ async function bootstrap() {
 
   app.useGlobalPipes(new ValidationPipe());
   app.setGlobalPrefix(prefix);
+  app.enableCors();
 
   await app.listen(port);
 

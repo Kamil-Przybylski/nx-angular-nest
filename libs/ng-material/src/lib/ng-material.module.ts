@@ -3,8 +3,14 @@ import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
-const UI_MODULES = [MatInputModule, MatCardModule, MatButtonModule];
+const UI_MODULES = [
+  MatCardModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatButtonModule,
+];
 
 @NgModule({
   imports: [CommonModule, ...UI_MODULES],

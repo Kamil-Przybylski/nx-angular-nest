@@ -18,7 +18,8 @@
       "@libs/configuration": ["libs/configuration/src/index.ts"],
       "@libs/nest-auth": ["libs/nest-auth/src/index.ts"],
       "@libs/nest-database": ["libs/nest-database/src/index.ts"],
-      "@libs/ng-material": ["libs/ng-material/src/index.ts"]
+      "@libs/ng-material": ["libs/ng-material/src/index.ts"],
+      "@libs/store-utils": ["libs/store-utils/src/index.ts"]
     },
     "strict": true,
     "strictPropertyInitialization": false

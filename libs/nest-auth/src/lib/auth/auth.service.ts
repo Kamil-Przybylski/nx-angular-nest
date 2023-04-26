@@ -26,4 +26,12 @@ export class AuthService {
     });
     return { accessToken };
   }
+
+  async getUser(id: number) {
+    return this.usersService.findOne({ id });
+  }
+
+  async getUsers() {
+    return this.usersService.findMany();
+  }
 }

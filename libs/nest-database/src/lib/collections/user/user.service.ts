@@ -53,7 +53,7 @@ export class UsersService {
   }
 
   async findOne(where: {
-    id?: string;
+    id?: number;
     username?: string;
     email?: string;
   }): Promise<IUser | null> {
@@ -64,5 +64,9 @@ export class UsersService {
     } as FindOneOptions<UserEntity>);
 
     return user;
+  }
+
+  async findMany(): Promise<IUser[]> {
+    return await this.usersRepository.find();
   }
 }
